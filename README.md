@@ -1,7 +1,7 @@
 [![Build Status](https://files.ariadata.co/file/ariadata_logo.png)](https://ariadata.co)
 
-docker-compose for using nginx-proxy-manager
-> This Needs `git + docker + docker-compose`:
+docker-compose for nginx-proxy-manager
+> This needs `git + docker + docker-compose`:
 ---
 #### 1- Create nginx-proxy-manager bridge network :
 ```sh
@@ -21,8 +21,11 @@ docker-compose up -d
 ```
 #### 5- goto : 
 >  `http://YOUR-IP:8181`
+>  
 Use these credentials to first login and change it after logged in :
+
 User : `admin@example.com`
+
 Pass : `changeme`
 
 done!
