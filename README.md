@@ -1,6 +1,7 @@
 [![Build Status](https://files.ariadata.co/file/ariadata_logo.png)](https://ariadata.co)
 
 ![](https://img.shields.io/github/stars/ariadata/dc-nginxproxymanager.svg)
+![](https://img.shields.io/github/watchers/ariadata/dc-nginxproxymanager.svg)
 ![](https://img.shields.io/github/forks/ariadata/dc-nginxproxymanager.svg)
 
 docker-compose for nginx-proxy-manager
