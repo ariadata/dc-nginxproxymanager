@@ -19,17 +19,13 @@ docker network create nginx-proxy-manager
 ```
 #### 2- Clone these repository to your system :
 ```sh
-git clone https://github.com/ariadata/dc-nginxproxymanager.git
+git clone https://github.com/ariadata/dc-nginxproxymanager.git && cd dc-nginxproxymanager && rm -rf .git
 ```
-#### 3- cd into created folder :
-```sh
-cd dc-nginxproxymanager
-```
-#### 4- Run docker-compose file by using :
+#### 3- Run docker-compose file by using :
 ```sh
 docker-compose up -d
 ```
-#### 5- Goto : 
+#### 4- Goto : 
 >  `http://YOUR-IP:8181`
 >  
 Use these credentials to first login and change it after logged in :
