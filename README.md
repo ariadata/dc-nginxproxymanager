@@ -17,7 +17,7 @@ bash <(curl -sSL https://git.io/JDM9J)
 ```sh
 docker network create nginx-proxy-manager
 ```
-#### 2- Clone these repository to your system :
+#### 2- Clone these repository to your system && pull docker images:
 ```sh
 git clone https://github.com/ariadata/dc-nginxproxymanager.git nginx-proxy-manager && cd nginx-proxy-manager && rm -rf .git && docker-compose pull
 ```
