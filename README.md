@@ -19,7 +19,7 @@ docker network create nginx-proxy-manager
 ```
 #### 2- Clone these repository to your system :
 ```sh
-git clone https://github.com/ariadata/dc-nginxproxymanager.git nginx-proxy-manager && cd nginx-proxy-manager && rm -rf .git
+git clone https://github.com/ariadata/dc-nginxproxymanager.git nginx-proxy-manager && cd nginx-proxy-manager && rm -rf .git && docker-compose pull
 ```
 #### 3- Run docker-compose file by using :
 ```sh
