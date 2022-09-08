@@ -5,7 +5,7 @@
 ![](https://img.shields.io/github/watchers/ariadata/dc-nginxproxymanager.svg)
 ![](https://img.shields.io/github/forks/ariadata/dc-nginxproxymanager.svg)
 
-> This needs : dockerhost + docker-compose + git
+> This needs : [dockerhost](https://github.com/ariadata/ubuntu-sh)
 ---
 #### 1- Create nginx-proxy-manager bridge network :
 ```sh
