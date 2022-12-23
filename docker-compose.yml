@@ -6,9 +6,9 @@ services:
     restart: unless-stopped
     container_name: nginx-proxy-manager
     ports:
-      - '0.0.0.0:80:80'
-      - '0.0.0.0:8181:81'
-      - '0.0.0.0:443:443'
+      - '80:80'
+      - '8181:81'
+      - '443:443'
     volumes:
       - ./data:/data
       - ./letsencrypt:/etc/letsencrypt
