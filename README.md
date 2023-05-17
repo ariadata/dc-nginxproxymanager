@@ -29,3 +29,10 @@ User : `admin@example.com`
 Pass : `changeme`
 
 Done!
+
+#### Other Useful Tips! :
+> for being behind another nginx, use these in parent nginx config
+```conf
+proxy_ssl_name $host;
+proxy_ssl_server_name on;
+```
