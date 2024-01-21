@@ -1,10 +1,15 @@
-version: '3'
+version: '3.8'
 
 services:
-  app:
+  nginx-proxy-manager:
     image: 'jc21/nginx-proxy-manager:latest'
     restart: unless-stopped
     container_name: nginx-proxy-manager
+    environment:
+      TZ: '${DC_TZ}'
+      PUID: '${UID:-1000}'
+      PGID: '${GID:-1000}'
+#      DISABLE_IPV6: 'true'
     ports:
       - '80:80'
       - '8181:81'
@@ -12,9 +17,13 @@ services:
     volumes:
       - ./data:/data
       - ./letsencrypt:/etc/letsencrypt
+    healthcheck:
+      test: ["CMD", "/bin/check-health"]
+      interval: 10s
+      timeout: 3s
     networks:
       - nginx-proxy-manager
-      
+
 networks:
   nginx-proxy-manager:
     external: true
