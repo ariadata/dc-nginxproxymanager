@@ -37,9 +37,19 @@ proxy_ssl_name $host;
 proxy_ssl_server_name on;
 ```
 
-Added Headers for GeoIP2:
+Added Headers for GeoIP2 `20240426`:
 ```conf
 HTTP_GEOIP2_COUNTRY_CODE
 HTTP_GEOIP2_COUNTRY_NAME
 HTTP_GEOIP2_CITY_NAME
+
+# Links:
+https://download.maxmind.com/app/geoip_download
+
+https://github.com/PrxyHunter/GeoLite2/releases/latest
+
+https://cdn.jsdelivr.net/npm/geolite2-country/
+https://cdn.jsdelivr.net/npm/geolite2-city/
+https://cdn.jsdelivr.net/npm/geolite2-asn/
+
 ```
