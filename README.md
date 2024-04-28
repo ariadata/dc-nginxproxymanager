@@ -1,4 +1,4 @@
-# docker-compose for nginx-proxy-manager
+# docker-compose for nginx-proxy-manager + GeoIP2
 [![Build Status](https://files.ariadata.co/file/ariadata_logo.png)](https://ariadata.co)
 
 ![](https://img.shields.io/github/stars/ariadata/dc-nginxproxymanager.svg)
@@ -35,4 +35,11 @@ Done!
 ```conf
 proxy_ssl_name $host;
 proxy_ssl_server_name on;
+```
+
+Added Headers for GeoIP2:
+```conf
+HTTP_GEOIP2_COUNTRY_CODE
+HTTP_GEOIP2_COUNTRY_NAME
+HTTP_GEOIP2_CITY_NAME
 ```

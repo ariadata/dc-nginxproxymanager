@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   nginx-proxy-manager:
-    image: 'jc21/nginx-proxy-manager:latest'
+    image: 'jc21/nginx-proxy-manager:2' # can use 2.11.1
     restart: unless-stopped
     container_name: nginx-proxy-manager
     environment:
@@ -17,6 +17,10 @@ services:
     volumes:
       - ./data:/data
       - ./letsencrypt:/etc/letsencrypt
+      - ./configs/proxy.conf:/etc/nginx/conf.d/include/proxy.conf
+      - ./configs/custom:/data/nginx/custom
+      - ./configs/geoip2:/data/nginx/geoip2
+      - ./configs/modules/geoip2.conf:/etc/nginx/modules/geoip2.conf
     healthcheck:
       test: ["CMD", "/bin/check-health"]
       interval: 10s
