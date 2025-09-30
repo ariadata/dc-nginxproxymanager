@@ -37,6 +37,11 @@ proxy_ssl_name $host;
 proxy_ssl_server_name on;
 ```
 
+Get Client Real IP by Header:
+```
+x-real-ip
+```
+
 Added Headers for GeoIP2 `20240426`:
 ```conf
 HTTP_GEOIP2_COUNTRY_CODE
