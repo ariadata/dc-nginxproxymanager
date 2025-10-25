@@ -17,6 +17,7 @@ git clone https://github.com/ariadata/dc-nginxproxymanager.git nginx-proxy-manag
 ```
 #### 3- Run docker-compose file by using :
 ```sh
+bash init.sh
 docker-compose up -d
 ```
 #### 4- Goto : 
